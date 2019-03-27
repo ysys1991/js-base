@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>静态集合和动态集合的区别</title>
+</head>
+<body>
+  <p>1</p>
+  <p>2</p>
+  <p>3</p>
+  <script>
+    var pList = document.getElementsByTagName('p')
+    var staticList = document.querySelectorAll('p')
+    console.log(pList)
+
+    var pEl = document.createElement('p')
+    document.body.appendChild(pEl)
+
+    console.log('pList => ', pList) // 四个P
+    console.log('staticList => ', staticList) // 三个p
+  </script>
+</body>
+</html>
